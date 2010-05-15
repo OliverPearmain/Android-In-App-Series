@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package com.sas.inappwifitoggle;
+package com.oliverpearmain.inappwifitoggle;
 
 public final class R {
     public static final class attr {
