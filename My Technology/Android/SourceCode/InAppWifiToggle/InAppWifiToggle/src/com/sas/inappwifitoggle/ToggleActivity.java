@@ -1,4 +1,4 @@
-package com.oliverpearmain.inappwifitoggle;
+package com.sas.inappwifitoggle;
 
 import android.app.Activity;
 import android.content.Context;
