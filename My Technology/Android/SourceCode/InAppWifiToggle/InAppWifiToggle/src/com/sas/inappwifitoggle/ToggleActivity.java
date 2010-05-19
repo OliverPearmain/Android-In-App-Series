@@ -10,6 +10,7 @@ public class ToggleActivity extends Activity {
     @Override
     public void onStart() 
     {
+    	super.onStart();
     	
     	try
     	{
@@ -42,7 +43,6 @@ public class ToggleActivity extends Activity {
 	        else 
 	        	DisplayToast(toastErrorMessage);
 
-	    	super.onStart();
 	    	
     	}
     	catch (Exception e)
