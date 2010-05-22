@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, ToggleActivity!</string>
+    <string name="app_name">In-App Donate</string>
+
+<string name="wifi_activity_name">Toggle Wifi</string>
+<string name="bluetooth_activity_name">Toggle Bluetooth</string>
+</resources>
