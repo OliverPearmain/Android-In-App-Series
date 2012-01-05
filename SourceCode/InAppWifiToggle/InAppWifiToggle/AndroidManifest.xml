@@ -4,7 +4,18 @@
       package="com.sas.inappwifitoggle"
       android:versionCode="3"
       android:versionName="1.2">
-      
+    
+    <uses-sdk android:minSdkVersion="3" />
+    <!--  For the wifi toggle all Android versions use the same code so we don't need to compile against a newer 
+    SDK and can use a "Android 1.5" (API Level 3) build target (under project properties > Android) 
+    The minSdkVersion="3" specifies that all versions 1.5 and above can use the application. 
+    Note we cannot specify a targetSdkVersion (and we do not need to because it would be the same as the 
+    minSdkVersion) since we are using a "Android 1.5" build target and this doesn't support targetSdkVersion. -->
+    
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"></uses-permission>
+    
     <application android:icon="@drawable/icon" 
         		 android:label="@string/app_name">
         <activity android:name=".ToggleActivity"        		  
@@ -18,13 +29,7 @@
 				<action android:name="android.intent.action.VOICE_COMMAND" />
 				<category android:name="android.intent.category.DEFAULT" />
 			</intent-filter> 
-        </activity>
+        </activity>        
     </application>
-    
-    <uses-sdk android:minSdkVersion="3"  android:targetSdkVersion="5" />
-    
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
-	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
-    <uses-permission android:name="android.permission.WAKE_LOCK"></uses-permission>
 	
 </manifest> 
