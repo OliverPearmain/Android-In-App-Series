@@ -4,7 +4,14 @@
       package="com.oliverpearmain.inappbluetoothtoggle"
       android:versionCode="1"
       android:versionName="1.0">
-                  
+    
+    <uses-sdk android:minSdkVersion="3" android:targetSdkVersion="7" />
+    <!--  For minSdkVersion & targetSdkVersion info, see 
+    http://stackoverflow.com/questions/4568267/android-min-sdk-version-vs-target-sdk-version#4994039 -->
+    
+	<uses-permission android:name="android.permission.BLUETOOTH" />
+	<uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    
     <application android:icon="@drawable/icon" 
         		 android:label="@string/app_name">
         <activity android:name=".ToggleActivity"        		  
@@ -20,10 +27,5 @@
 			</intent-filter> 
         </activity>
     </application>
-    
-    <uses-sdk android:minSdkVersion="3" android:targetSdkVersion="5" />
-    
-	<uses-permission android:name="android.permission.BLUETOOTH" />
-	<uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
 
 </manifest> 
